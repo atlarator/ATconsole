@@ -1,0 +1,82 @@
+{ config, pkgs, ... }:
+
+{
+  # List packages installed in system profile. To search, run:
+  # $ nix search wget
+  environment.systemPackages = with pkgs; [
+    adbtuifm
+    acme-sh
+    android-tools
+    apt
+    aria2
+    bat
+    binsider
+    bird2
+    blueman
+    bpftrace
+    btop
+    coreutils
+    clash-verge-rev
+    cloc
+    curl
+    ddrescue
+    element-desktop
+    fastfetch
+    fd
+    file
+    fish
+    flclash
+    fzf
+    gh
+    ghostty
+    git
+    gnupg
+    google-chrome
+    gping
+    hugo
+    hyfetch
+    hysteria
+    imagemagick_light
+    iptables
+    kdePackages.kamoso
+    kdePackages.kdenlive
+    kernelshark
+    kitty
+    krita
+    localsend
+    lsof
+    mc
+    mihomo
+    mosh
+    motrix
+    networkmanager
+    neomutt
+    nixpkgs-fmt
+    nixpkgs-review
+    nnn
+    obsidian
+    obs-studio
+    ouch
+    pciutils
+    pinentry-all
+    ripgrep
+    rsync
+    screen
+    squashfsTools
+    telegram-desktop
+    texmacs
+    tmux
+    thunderbird
+    tinyxxd
+    tor-browser
+    tree
+    typst
+    usbutils
+    util-linux
+    valgrind
+    vlc
+    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    weechat
+    wireguard-tools
+  ];
+}
