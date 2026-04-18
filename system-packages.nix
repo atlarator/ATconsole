@@ -28,7 +28,6 @@
     flclash
     fzf
     gh
-    ghostty
     git
     gnupg
     google-chrome
@@ -48,11 +47,11 @@
     mc
     mihomo
     mosh
-    motrix
     networkmanager
     neomutt
     nixpkgs-fmt
     nixpkgs-review
+    nixpkgs-vet
     nnn
     obsidian
     obs-studio
