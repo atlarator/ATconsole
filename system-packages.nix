@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     adbtuifm
     acme-sh
+    alpine
     android-tools
     apt
     aria2
@@ -26,9 +27,11 @@
     file
     fish
     flclash
+    fwupd
     fzf
     gh
     git
+    git-absorb
     gnupg
     google-chrome
     gping
@@ -74,7 +77,8 @@
     util-linux
     valgrind
     vlc
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vim
+    vscode
     weechat
     wireguard-tools
   ];
