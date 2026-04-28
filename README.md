@@ -10,8 +10,6 @@ Using classic vim and sometimes helix.
 When editing files, I prefer to use vim or helix, on a low power-cost device, I refuse to use electron-based editors.  
 Some profilling tools are installed for emergency use.  
 
-## TODO
-I don't want to modify this configuration too frequently unless some tools make me lose my heartbeat or there is a new version releasing.
-
+KDE is buggy!  
 
 If you like this configuration, support me at: [Buy me a coffee!](https://buymeacoffee.com/vzstless)
