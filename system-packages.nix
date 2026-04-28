@@ -7,6 +7,7 @@
     adbtuifm
     acme-sh
     alpine
+    alsa-utils
     android-tools
     apt
     aria2
@@ -37,6 +38,7 @@
     hysteria
     imagemagick_light
     iptables
+    just
     kernelshark
     kitty
     lsof
@@ -47,8 +49,10 @@
     obsidian
     obs-studio
     ouch
+    pavucontrol
     pciutils
     pinentry-all
+    pulseaudio
     ripgrep
     rsync
     squashfsTools

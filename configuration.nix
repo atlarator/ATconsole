@@ -46,7 +46,7 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-  # services.xserver.desktopManager.runXdgAutostartIfNone = true;
+  services.xserver.desktopManager.runXdgAutostartIfNone = true;
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -55,6 +55,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    wireplumber.enable = true;
   };
 
   programs.clash-verge.enable = true;
@@ -64,7 +65,7 @@
   users.users.vzstless = {
     isNormalUser = true;
     description = "VZstless";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "audio" "networkmanager" "wheel" ];
   };
 
   programs.firefox.enable = true;
