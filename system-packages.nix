@@ -12,6 +12,7 @@
     aria2
     bat
     binsider
+    binwalk
     bird2
     blueman
     bpftrace
@@ -20,42 +21,29 @@
     clash-verge-rev
     cloc
     curl
-    ddrescue
     element-desktop
     fastfetch
-    fd
     file
     fish
     flclash
     fwupd
     fzf
-    gh
     git
     git-absorb
     gnupg
     google-chrome
     gping
-    hugo
     hyfetch
     hysteria
     imagemagick_light
     iptables
-    kdePackages.kamoso
-    kdePackages.kdenlive
     kernelshark
     kitty
-    krita
-    localsend
     lsof
     mc
     mihomo
-    mosh
     networkmanager
     neomutt
-    nixpkgs-fmt
-    nixpkgs-review
-    nixpkgs-vet
-    nnn
     obsidian
     obs-studio
     ouch
@@ -63,7 +51,6 @@
     pinentry-all
     ripgrep
     rsync
-    screen
     squashfsTools
     telegram-desktop
     texmacs
@@ -80,6 +67,7 @@
     vim
     vscode
     weechat
+    wgpu-utils
     wireguard-tools
   ];
 }
