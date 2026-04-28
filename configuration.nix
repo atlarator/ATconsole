@@ -26,23 +26,27 @@
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = true;
-
-  # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
   i18n.inputMethod.fcitx5.waylandFrontend = true;
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "cn";
-    variant = "";
+
+  # xserver configuration for xfce
+  services.xserver = {
+    enable = true;
+    desktopManager = {
+      xterm.enable = false;
+      xfce.enable = true;
+    };
+    xkb = {
+      layout = "cn";
+      variant = "";
+    };
   };
+
+  services.libinput.enable = true;
+  services.displayManager.defaultSession = "xfce";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-  services.xserver.desktopManager.runXdgAutostartIfNone = true;
+  # services.xserver.desktopManager.runXdgAutostartIfNone = true;
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -51,16 +55,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
 
   programs.clash-verge.enable = true;
 
@@ -72,7 +67,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
-  # Install firefox.
   programs.firefox.enable = true;
 
   systemd.services.fcitx5 = {
@@ -91,7 +85,6 @@
   ];
   networking.search = [ "example.ts.net" ];
 
-  # Allow unfree packages
   nixpkgs.config = {
     allowUnfree = true;
     allowBroken = true;
