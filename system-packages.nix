@@ -18,7 +18,8 @@
     blueman
     bpftrace
     btop
-    coreutils
+    cargo
+    clang
     clash-verge-rev
     cloc
     curl
@@ -26,6 +27,7 @@
     fastfetch
     file
     fish
+    flatpak
     flclash
     fwupd
     fzf
@@ -41,6 +43,7 @@
     just
     kernelshark
     kitty
+    libreoffice
     lsof
     mc
     mihomo
@@ -53,6 +56,7 @@
     pciutils
     pinentry-all
     pulseaudio
+    rustup
     ripgrep
     rsync
     squashfsTools
@@ -64,6 +68,7 @@
     tor-browser
     tree
     typst
+    unzip
     usbutils
     util-linux
     valgrind

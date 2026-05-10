@@ -26,8 +26,6 @@
     enable = true; 
     fcitx5.addons = with pkgs; [ 
       fcitx5-gtk # alternatively, 
-      kdePackages.fcitx5-qt 
-      kdePackages.fcitx5-with-addons
       qt6Packages.fcitx5-chinese-addons
       fcitx5-pinyin-moegirl
       fcitx5-pinyin-minecraft
