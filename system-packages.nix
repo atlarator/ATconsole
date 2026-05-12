@@ -18,11 +18,11 @@
     blueman
     bpftrace
     btop
-    cargo
     clang
     clash-verge-rev
     cloc
     curl
+    dms-shell
     element-desktop
     fastfetch
     file
@@ -31,6 +31,7 @@
     flclash
     fwupd
     fzf
+    ghostty
     git
     git-absorb
     gnupg
@@ -41,7 +42,6 @@
     imagemagick_light
     iptables
     just
-    kernelshark
     kitty
     libreoffice
     lsof
@@ -49,9 +49,9 @@
     mihomo
     networkmanager
     neomutt
+    niri
     obsidian
     obs-studio
-    ouch
     pavucontrol
     pciutils
     pinentry-all
@@ -62,7 +62,6 @@
     squashfsTools
     telegram-desktop
     texmacs
-    tmux
     thunderbird
     tinyxxd
     tor-browser

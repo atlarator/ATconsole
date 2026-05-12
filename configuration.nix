@@ -11,6 +11,7 @@
       ./boot.nix
       ./locale.nix
       ./NUR.nix
+      ./niri/niri.nix
       ./nixbuild/nixbuild.nix
       ./system-packages.nix
     ];
