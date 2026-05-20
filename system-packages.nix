@@ -20,6 +20,7 @@
     btop
     clang
     clash-verge-rev
+    claude-code
     cloc
     curl
     dms-shell
@@ -37,29 +38,39 @@
     gnupg
     google-chrome
     gping
+    heimdall-gui
     hyfetch
+    hyperfine
     hysteria
     imagemagick_light
     iptables
     just
     kitty
     libreoffice
+    localsend
     lsof
     mc
     mihomo
+    miktex
     networkmanager
     neomutt
     niri
+    neovim
     obsidian
     obs-studio
     pavucontrol
     pciutils
     pinentry-all
+    podman
+    podman-compose
     pulseaudio
     rustup
     ripgrep
     rsync
+    sqlx-cli
     squashfsTools
+    steam
+    stress-ng
     telegram-desktop
     texmacs
     thunderbird
@@ -77,5 +88,6 @@
     weechat
     wgpu-utils
     wireguard-tools
+    xonsh
   ];
 }

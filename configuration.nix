@@ -12,7 +12,7 @@
       ./locale.nix
       ./NUR.nix
       ./niri/niri.nix
-      ./nixbuild/nixbuild.nix
+      # ./nixbuild/nixbuild.nix
       ./system-packages.nix
     ];
 
@@ -67,7 +67,19 @@
   users.users.vzstless = {
     isNormalUser = true;
     description = "VZstless";
-    extraGroups = [ "audio" "networkmanager" "wheel" ];
+    extraGroups = [ "audio" "networkmanager" "wheel" "podman" ];
+  };
+
+  virtualisation = {
+    containers = {
+      enable = true;
+      registries.search = [ "docker.io" ];
+    };
+    podman = {
+      enable = true;
+      dockerCompat = true;
+      defaultNetwork.settings.dns_enabled = true;
+    };
   };
 
   programs.firefox.enable = true;
