@@ -8,7 +8,9 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./alias.nix
       ./boot.nix
+      ./intel-graphics.nix
       ./locale.nix
       ./NUR.nix
       ./niri/niri.nix
@@ -28,27 +30,8 @@
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
-  i18n.inputMethod.fcitx5.waylandFrontend = true;
-
-  # xserver configuration for xfce
-  services.xserver = {
-    enable = true;
-    desktopManager = {
-      xterm.enable = false;
-      xfce.enable = true;
-    };
-    xkb = {
-      layout = "cn";
-      variant = "";
-    };
-  };
-
-  services.libinput.enable = true;
-  services.displayManager.defaultSession = "xfce";
-
   # Enable CUPS to print documents.
   services.printing.enable = true;
-  services.xserver.desktopManager.runXdgAutostartIfNone = true;
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -60,26 +43,12 @@
     wireplumber.enable = true;
   };
 
-  programs.clash-verge.enable = true;
-
   users.users.root.hashedPassword = "!";
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.vzstless = {
     isNormalUser = true;
     description = "VZstless";
-    extraGroups = [ "audio" "networkmanager" "wheel" "podman" ];
-  };
-
-  virtualisation = {
-    containers = {
-      enable = true;
-      registries.search = [ "docker.io" ];
-    };
-    podman = {
-      enable = true;
-      dockerCompat = true;
-      defaultNetwork.settings.dns_enabled = true;
-    };
+    extraGroups = [ "audio" "networkmanager" "wheel" ];
   };
 
   programs.firefox.enable = true;
@@ -125,8 +94,6 @@
 
   # List services that you want to enable:
 
-  services.flatpak.enable = true;
-
   services.fwupd = {
     enable = true;
   };
@@ -146,6 +113,12 @@
     };
   };
   
+  programs.clash-verge = {
+    enable = true;
+    serviceMode = true;   # Enable service mode for TUN
+    tunMode = true;       # Enable TUN mode if you need it
+  };
+
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
   system.autoUpgrade.channel = "https://channels.nixos.org/nixos-unstable";

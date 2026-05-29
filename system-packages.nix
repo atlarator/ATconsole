@@ -5,7 +5,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     adbtuifm
-    acme-sh
     alpine
     alsa-utils
     android-tools
@@ -18,17 +17,18 @@
     blueman
     bpftrace
     btop
+    chawan
     clang
     clash-verge-rev
     claude-code
     cloc
     curl
+    dconf-editor
     dms-shell
     element-desktop
     fastfetch
     file
     fish
-    flatpak
     flclash
     fwupd
     fzf
@@ -36,13 +36,10 @@
     git
     git-absorb
     gnupg
-    google-chrome
+    go
     gping
-    heimdall-gui
     hyfetch
-    hyperfine
     hysteria
-    imagemagick_light
     iptables
     just
     kitty
@@ -51,23 +48,20 @@
     lsof
     mc
     mihomo
-    miktex
+    nautilus
     networkmanager
-    neomutt
-    niri
     neovim
+    nvtopPackages.intel
     obsidian
     obs-studio
+    osu-lazer-bin
     pavucontrol
     pciutils
     pinentry-all
-    podman
-    podman-compose
-    pulseaudio
-    rustup
+    quickshell
+    wineWow64Packages.unstableFull
     ripgrep
     rsync
-    sqlx-cli
     squashfsTools
     steam
     stress-ng
@@ -83,7 +77,6 @@
     util-linux
     valgrind
     vlc
-    vim
     vscode
     weechat
     wgpu-utils
