@@ -24,7 +24,7 @@
     cloc
     curl
     dconf-editor
-    dms-shell
+    eog
     element-desktop
     fastfetch
     file
@@ -48,20 +48,23 @@
     lsof
     mc
     mihomo
+    motrix
     nautilus
     networkmanager
     neovim
+    noctalia-shell
     nvtopPackages.intel
     obsidian
     obs-studio
+    openrsync
     osu-lazer-bin
     pavucontrol
     pciutils
     pinentry-all
     quickshell
     wineWow64Packages.unstableFull
+    wget
     ripgrep
-    rsync
     squashfsTools
     steam
     stress-ng

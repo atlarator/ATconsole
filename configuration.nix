@@ -30,6 +30,8 @@
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
+  services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
   # Enable CUPS to print documents.
   services.printing.enable = true;
   # Enable sound with pipewire.
@@ -52,6 +54,10 @@
   };
 
   programs.firefox.enable = true;
+
+  programs.steam = {
+    enable = true;
+  };
 
   systemd.services.fcitx5 = {
     enable = true;
