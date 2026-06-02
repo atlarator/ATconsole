@@ -30,7 +30,6 @@
     file
     fish
     flclash
-    fwupd
     fzf
     ghostty
     git
