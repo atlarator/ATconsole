@@ -17,6 +17,7 @@
     blueman
     bpftrace
     btop
+    cbonsai
     chawan
     clang
     clash-verge-rev
@@ -39,10 +40,11 @@
     gping
     hyfetch
     hysteria
+    inotify-info
     iptables
     just
     kitty
-    libreoffice
+    lazygit
     localsend
     lsof
     mc
@@ -52,6 +54,7 @@
     networkmanager
     neovim
     noctalia-shell
+    nodejs
     nvtopPackages.intel
     obsidian
     obs-studio
@@ -60,6 +63,7 @@
     pavucontrol
     pciutils
     pinentry-all
+    pmbootstrap
     quickshell
     wineWow64Packages.unstableFull
     wget
@@ -79,10 +83,15 @@
     util-linux
     valgrind
     vlc
-    vscode
     weechat
     wgpu-utils
     wireguard-tools
     xonsh
+  ]
+  ++ [
+    ccls
+    gopls
+    nixd
+    pyright
   ];
 }
