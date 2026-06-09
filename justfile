@@ -1,3 +1,2 @@
-copy:
-	cp -r /etc/nixos/* ./
-	rm ./hardware-configuration.nix
+sync:
+    rsync -av --delete --exclude='justfile' --exclude='README.md' --exclude='.git/' /etc/nixos/ ./
